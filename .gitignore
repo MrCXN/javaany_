@@ -21,3 +21,4 @@ src/main/webapp/WEB-INF/work/
 *.ipr
 *.iml
 *.iws
+*.xml
