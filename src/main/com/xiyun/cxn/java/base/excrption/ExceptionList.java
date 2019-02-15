@@ -1,4 +1,4 @@
-package main.java.com.xiyun.cxn.java.base.excrption;
+package main.com.xiyun.cxn.java.base.excrption;
 
 /**
  * @program javaany_
@@ -8,6 +8,9 @@ package main.java.com.xiyun.cxn.java.base.excrption;
  */
 public class ExceptionList extends Exception {
 
-    public ExceptionList(String sdsdfsd) {
+    public ExceptionList(String message) {
+        // TODO Auto-generated constructor stub
+        super(message);
     }
+
 }

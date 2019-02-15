@@ -1,4 +1,4 @@
-package constant;
+package main.com.xiyun.cxn.java.base.constant;
 
 /**
  * @program javaany_
