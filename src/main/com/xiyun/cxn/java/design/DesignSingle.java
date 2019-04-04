@@ -34,3 +34,12 @@ class Singleton8{
     public Singleton8(){
     }
 }
+
+
+class test{
+
+    public static void main(String[] args) {
+        Singleton8 instance = DesignSingle.getInstance();
+    }
+
+}

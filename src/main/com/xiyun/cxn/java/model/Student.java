@@ -18,6 +18,7 @@ public class Student {
     private int number;     //学号
     private String className;    //班级
     private List<String> hobby;    //爱好
+    public String pubParams;    //爱好
 
     public Student(){
     }
@@ -74,5 +75,10 @@ public class Student {
 
     public void setHobby(List<String> hobby) {
         this.hobby = hobby;
+    }
+
+
+    public String priMethodTest(String param1, String param2) {
+        return new StringBuilder(param1).append(param2).toString();
     }
 }

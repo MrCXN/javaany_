@@ -10,16 +10,19 @@ import main.com.xiyun.cxn.java.model.Student;
  */
 public class StringTest {
     public static void main(String[] args) {
-        Student student = new Student();
-        String isvMerchantId = new String();
-        int a = 0;
+//        Student student = new Student();
+//        String isvMerchantId = new String();
+//        int a = 0;
+//
+//        setStudent(student);
+//        System.out.println("student=" + student.getClassName());
+//        getSomeThing(isvMerchantId);
+//        System.out.println("isvMerchantId=" + isvMerchantId);
+//        setIntSomeThing(a);
+//        System.out.println("setIntSomeThing ====== "+a);
 
-        setStudent(student);
-        System.out.println("student=" + student.getClassName());
-        getSomeThing(isvMerchantId);
-        System.out.println("isvMerchantId=" + isvMerchantId);
-        setIntSomeThing(a);
-        System.out.println("setIntSomeThing ====== "+a);
+        String tradeNo = "ssssssos12312312312";
+        System.out.println(tradeNo.indexOf("sos"));
 
     }
 
@@ -37,4 +40,7 @@ public class StringTest {
         }
 //        return  someThing + isvMerchantId;
     }
+
+
+
 }
