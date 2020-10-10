@@ -5,8 +5,8 @@ import java.util.concurrent.*;
 
 public class ThreadDeadlock {
 
-    ExecutorService exec = Executors.newSingleThreadScheduledExecutor();
-//	  ExecutorService exec = Executors.newCachedThreadPool();    //如果添加给线程池中添加足够多的线程，就可以让所有任务都执行，避免饥饿死锁。
+   // ExecutorService exec = Executors.newSingleThreadScheduledExecutor();
+	  ExecutorService exec = Executors.newCachedThreadPool();    //如果添加给线程池中添加足够多的线程，就可以让所有任务都执行，避免饥饿死锁。
 
     /**
      * 模拟页面加载的例子
