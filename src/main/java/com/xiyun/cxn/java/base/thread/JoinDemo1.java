@@ -19,8 +19,8 @@ public class JoinDemo1 extends Thread {
     public void run() {
         try {
             //调用上一个线程的join方法，大家可以自己演示的时候可以把这行代码注释掉
-            previousThread.join(15);
-        } catch (InterruptedException e) {
+           // previousThread.join(15);
+        } catch (Exception e) {
             e.printStackTrace();
         }
         System.out.println("JoinDemo1 previousThread.join(10) ");
