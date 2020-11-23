@@ -2,7 +2,7 @@ package xiyun.cxn.java.model;
 
 /**
  * @program javaany_
- * @description: test1
+ * @description: test
  * @author: cxn
  * @create: 2019/04/22 18:57
  */

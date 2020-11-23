@@ -3,7 +3,7 @@ package com.xiyun.cxn.java.base.excrption;
 
 /**
  * @program javaany_
- * @description: 自定义异常-test1
+ * @description: 自定义异常-test
  * @author: cxn
  * @create: 2018/11/13 08:57
  */
