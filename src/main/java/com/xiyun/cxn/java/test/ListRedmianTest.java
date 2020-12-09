@@ -17,6 +17,20 @@ public class ListRedmianTest {
         String[] strs =  new String[]{"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16"};
         List<String> strings = Arrays.asList(strs);
 
+
+        String[] strss =  new String[]{"a","s","d","f","g","h","7","8","9","10","11","12","13","14","15","16"};
+        List<String> stringss = Arrays.asList(strss);
+
+
+        ArrayList<String> arrayList = new ArrayList<>();
+        arrayList.addAll(strings);
+        System.out.println(arrayList.toString());
+        arrayList.addAll(stringss);
+
+        System.out.println(arrayList.toString());
+
+
+
         //批量插入-3条/次
         int thirdDOCount = strings.size();
        

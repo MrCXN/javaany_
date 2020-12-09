@@ -1,8 +1,10 @@
 package com.xiyun.cxn.java.lambda;
 
-import javax.security.auth.login.AccountException;
-import java.util.*;
-import java.util.function.Function;
+import com.alibaba.fastjson.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
@@ -20,20 +22,27 @@ public class ListToMapTest {
         Merchant merchant = new Merchant();
         merchant.setGroupId("123");
         merchant.setGroupName("xiaohong");
+        merchant.setCount(50);
 
 
         Merchant merchant1 = new Merchant();
         merchant1.setGroupId("123");
         merchant1.setGroupName("xiaohong");
+        merchant1.setCount(150);
 
         Merchant merchant2 = new Merchant();
         merchant2.setGroupId("234");
         merchant2.setGroupName("xiaoli");
+        merchant2.setCount(200);
 
         merchants.add(merchant);
         merchants.add(merchant1);
         merchants.add(merchant2);
 
+
+        List<Merchant> collect = merchants.stream().filter(a -> a.getCount() == 200 || a.getCount() == 150).collect(Collectors.toList());
+
+        System.out.println("111"+JSONObject.toJSONString(collect));
 
         //List<Merchant>  collect = merchants.stream().collect(Collectors.groupingBy();
 
@@ -81,6 +90,8 @@ public class ListToMapTest {
         private String groupId;
         private String groupName;
 
+        private Integer count;
+
         public String getGroupId() {
             return groupId;
         }
@@ -95,6 +106,15 @@ public class ListToMapTest {
 
         public void setGroupName(String groupName) {
             this.groupName = groupName;
+        }
+
+        public Integer getCount() {
+
+            return count;
+        }
+
+        public void setCount(Integer count) {
+            this.count = count;
         }
     }
 

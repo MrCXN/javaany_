@@ -27,6 +27,23 @@
             <artifactId>sentinel-core</artifactId>
             <version>1.5.1</version>
         </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yz.open</groupId>
+            <artifactId>oplatformgateway-sdk</artifactId>
+            <version>2.2.20201012</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.pegdown</groupId>
+            <artifactId>pegdown</artifactId>
+            <version>1.6.0</version>
+        </dependency>
     </dependencies>
 
 </project>
