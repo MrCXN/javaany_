@@ -1,5 +1,7 @@
 package com.xiyun.cxn.java.base.list;
 
+import com.alibaba.fastjson.JSONObject;
+
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -18,12 +20,14 @@ public class IteratorTest {
 
 
     public static void ItesatorRomve() {
-//        ArrayList<String> list = new ArrayList<String>();
-//        list.add("1");
-//        list.add("2");
-//        list.add("3");
-//        list.add("4");
-//        list.add("5");
+        ArrayList<String> list = new ArrayList<String>();
+        list.add("1");
+        list.add("2");
+        list.add("3");
+        list.add("4");
+        list.add("5");
+
+        System.out.println(JSONObject.toJSONString(list));
 //
 //        Iterator it = list.iterator();
 //        int i = 0;
